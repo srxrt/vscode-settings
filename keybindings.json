@@ -1,0 +1,72 @@
+[
+	// FILE TREE
+	{
+		"command": "workbench.action.toggleSidebarVisibility",
+		"key": "ctrl+e"
+	},
+	{
+		"command": "workbench.files.action.focusFilesExplorer",
+		"key": "ctrl+e",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "n",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "renameFile",
+		"key": "r",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "f",
+		"command": "explorer.newFolder",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "deleteFile",
+		"key": "d",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "shift+enter",
+		"command": "editor.action.insertLineAfter",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+enter",
+		"command": "explorer.openToSide",
+		"when": "explorerViewletVisible && explorerViewletFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+shift+h", // move buffer left inside the window
+		"command": "workbench.action.moveEditorLeftInGroup",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+l", // move buffer right inside the window
+		"command": "workbench.action.moveEditorRightInGroup",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+k", // move buffer to the right window
+		"command": "workbench.action.moveEditorToNextGroup",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+j", // move buffer to the left window
+		"command": "workbench.action.moveEditorToPreviousGroup",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	}
+]

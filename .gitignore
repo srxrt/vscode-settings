@@ -1,0 +1,8 @@
+#ignore everything
+*
+
+#ignore .gitignore itself
+!.gitignore
+
+!settings.json
+!keybindings.json

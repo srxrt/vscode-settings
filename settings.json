@@ -1,0 +1,138 @@
+{
+	"editor.suggestSelection": "first",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true,
+		"**/.trunk/*actions/": true,
+		"**/.trunk/*logs/": true,
+		"**/.trunk/*notifications/": true,
+		"**/.trunk/*out/": true,
+		"**/.trunk/*plugins/": true
+	},
+	"window.zoomLevel": -1,
+	"files.autoSave": "onFocusChange",
+	"prettier.endOfLine": "auto",
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.fontSize": 16,
+	"git.ignoreMissingGitWarning": true,
+	"vsicons.dontShowNewVersionMessage": true,
+	"editor.wordWrap": "on",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.minimap.enabled": false,
+	"files.trimTrailingWhitespace": true,
+	"tabnine.experimentalAutoImports": true,
+	"workbench.colorTheme": "Eva Dark Bold",
+	"files.watcherExclude": {
+		"**/.trunk/*actions/": true,
+		"**/.trunk/*logs/": true,
+		"**/.trunk/*notifications/": true,
+		"**/.trunk/*out/": true,
+		"**/.trunk/*plugins/": true
+	},
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#ffff00",
+		"editorCursor.background": "#ae00ff",
+		"terminalCursor.foreground": "#ffff00",
+		"terminalCursor.background": "#ae00ff"
+	},
+	"git.autofetch": true,
+	"editor.fontFamily": "Fira Code",
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.cursorStyle": "block",
+
+	// Vim Settings
+	"vim.useSystemClipboard": true,
+	"vim.leader": "<space>",
+
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["k", "k"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+
+		// NAVIGATION
+		// switch b/w buffers
+		{ "before": ["<S-h>"], "commands": [":bprevious"] },
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+
+		{
+			"before": ["leader", "f", "g"],
+			"commands": ["actions.find"]
+		},
+		{
+			"before": ["g", "h"],
+			"commands": ["editor.action.showHover"]
+		},
+		// panes
+		{
+			"before": ["leader", "h"],
+			"commands": ["workbench.action.focusLeftGroup"]
+		},
+		{
+			"before": ["leader", "j"],
+			"commands": ["workbench.action.focusBelowGroup"]
+		},
+		{
+			"before": ["leader", "k"],
+			"commands": ["workbench.action.focusAboveGroup"]
+		},
+		{
+			"before": ["leader", "l"],
+			"commands": ["workbench.action.focusRightGroup"]
+		},
+		{
+			"before": ["<leader>", "b", "k"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "b", "d"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "w", "d"],
+			"commands": ["workbench.action.closeEditorsInGroup"]
+		},
+		{
+			"before": ["<leader>", "w", "v"], // split right
+			"commands": ["workbench.action.splitEditorRight"]
+		},
+		{ "before": ["leader", "w", "s"], "commands": [":split"] }, // split horizontally
+		{
+			"before": ["<leader>", "s", "r"],
+			"commands": ["editor.action.startFindReplaceAction"]
+		},
+		{ "before": ["leader", "f", "f"], "commands": ["workbench.action.quickOpen"] },
+		{ "before": ["<S-j>"], "commands": ["editor.action.insertLineAfter"] },
+		{ "before": ["<S-k>"], "commands": ["editor.action.insertLineBefore"] }
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.clipboardCopyAction"]
+		}
+	],
+	"vim.cursorStylePerMode": {
+		"normal": "block",
+		"insert": "line",
+		"visual": "block"
+	},
+	"vim.searchHighlightColor": "rgba(150, 150, 150, 0.3)",
+	"editor.tabSize": 2,
+	"editor.lineNumbers": "relative",
+	"prettier.printWidth": 90,
+	"terminal.integrated.fontFamily": "monospace",
+	"vscode_custom_css.imports": [
+		"file:///c:/Users/Shokhrukh/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
+	]
+}
