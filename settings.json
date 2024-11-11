@@ -60,6 +60,7 @@
 			"before": ["<leader>", "w"],
 			"commands": ["workbench.action.files.save"]
 		},
+		//this is a change
 
 		// NAVIGATION
 		// switch b/w buffers
@@ -134,5 +135,6 @@
 	"terminal.integrated.fontFamily": "monospace",
 	"vscode_custom_css.imports": [
 		"file:///c:/Users/Shokhrukh/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
-	]
+	],
+	"editor.lineHeight": 2
 }
